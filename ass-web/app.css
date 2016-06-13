@@ -1,16 +1,58 @@
 /* CSS declarations go here */
+body {
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .centered{
     margin: 0 auto;
 }
 
 .jumbotron {
-background-image: url("bg.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
 }
 
 .jumbotron h1 {
-    color: red;
-    text-shadow: 2px 2px 8px black;
+   
+}
+
+.stop {
+    margin: 20px 20px 40px 20px;
+    background: transparent;
+}
+.crank-slow {
+    margin: 20px 20px 40px 20px;
+    background: transparent;
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.crank-medium {
+    margin: 20px 20px 40px 20px;
+    background: transparent;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.crank-insane {
+    margin: 20px 20px 40px 20px;
+    background: transparent;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

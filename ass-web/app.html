@@ -1,27 +1,37 @@
 <head>
-    <title>Fredrik Version 40+</title>
+    <title>Cici snart 40</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="container">
         <div class="centered text-center">
             <div class="jumbotron">
-                <h1>Make Fredrik Run</h1> 
+                <h1>BubbelMakaren</h1> 
+            </div>
+            <div>
+                <img class="{{spinAnimation}}" src="crank.min.svg" alt="bubble spinner crank">
+            </div>
+            <div>
                 {{> run}}
                 {{> run1}}
                 {{> run2}}
-                <p>You've made Fredrik run {{counter}} times.</p>
+                <p>You've made bubbles {{counter}} times.</p>
+                {{> stop}}
             </div>
         </div>
     </div>
 </body>
 
 <template name="run">
-    <button class="btn btn-success btn-lg">RUN!</button>
+    <button class="btn btn-success btn-md">slow</button>
 </template>
 <template name="run1">
-    <button class="btn btn-warning btn-lg">FASTER!!</button>
+    <button class="btn btn-warning btn-md">medium</button>
 </template>
 <template name="run2">
-    <button class="btn btn-danger btn-lg">LONGER!!!</button>
+    <button class="btn btn-danger btn-md">insane!</button>
+</template>
+<template name="stop">
+    <button class="btn btn-default btn-md">stop</button>
 </template>
